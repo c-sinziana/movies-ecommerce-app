@@ -1,0 +1,57 @@
+.containerNewsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf8f7;
+
+  .titleNewsletter {
+    font-family: "Merriweather";
+    color: black;
+    font-size: 5vh;
+    font-weight: 600;
+    margin-bottom: 2vh;
+  }
+
+  .descriptionNewsletter {
+    font-family: "Urbanist";
+    font-weight: bold;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    margin-left: 1rem;
+  }
+
+  .inputContainerNewsletter {
+    width: 40%;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 0.1rem solid lightgray;
+
+    .inputNewsletter {
+      border: none;
+      flex: 7;
+      padding-left: 1rem;
+    }
+
+    .buttonNewsletter {
+      flex: 0.5;
+      border: none;
+      background-color: teal;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

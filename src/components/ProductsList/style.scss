@@ -1,0 +1,21 @@
+.titleProducts {
+  font-family: "Urbanist";
+  margin: 0 0 0 1rem;
+
+  .containerProducts {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .titleProducts {
+    justify-content: center;
+    margin: 0 0 0 0.7rem;
+
+    .containerProducts {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}

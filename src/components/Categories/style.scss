@@ -1,0 +1,13 @@
+.containerCategories {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  background-color: #fcf8f7;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerCategories {
+    flex-direction: column;
+    font-size: 2rem;
+  }
+}

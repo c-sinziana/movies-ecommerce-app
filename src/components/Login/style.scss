@@ -1,0 +1,65 @@
+.containerLogin {
+  width: 100vw;
+  height: 100vh;
+  background: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapperLogin {
+    padding: 2rem;
+    width: 25%;
+    background-color: white;
+
+    .titleLogin {
+      font-size: 3rem;
+      font-weight: 400;
+    }
+
+    .formLogin {
+      display: flex;
+      flex-direction: column;
+
+      .inputLogin {
+        flex: 1;
+        min-width: 40%;
+        margin: 1.5rem 0rem;
+        padding: 1rem;
+      }
+
+      .buttonLogin {
+        width: 40%;
+        border: none;
+        padding: 1rem 0.5rem;
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 0.8rem;
+      }
+
+      .descriptionLogin {
+        font-family: "Urbanist";
+        text-decoration: underline;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 1rem 0rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerLogin {
+    width: 160vh;
+    height: 100vh;
+    justify-content: flex-start;
+
+    .wrapperLogin {
+      margin-left: 1.5rem;
+    }
+
+    .descriptionLogin {
+      font-size: 2rem;
+    }
+  }
+}

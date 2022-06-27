@@ -1,0 +1,99 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+
+    .logoContainer {
+      display: flex;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  .centerContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 5;
+
+    .languageButton {
+      margin: 0.5rem 0.5rem 0 0;
+    }
+
+    .searchContainer {
+      display: flex;
+      flex-direction: row;
+      height: 2rem;
+
+      .searchInput {
+        margin: 0.5rem 0 0 0;
+      }
+
+      .searchIcon {
+        margin: 0.7rem 0 0 0.5rem;
+      }
+    }
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+    margin-bottom: 2rem;
+
+    .registerButton {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 35rem;
+      margin-right: 1rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .signinButton {
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: underline;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .shoppingCartContainer {
+      height: 1rem;
+      margin-left: 53%;
+      text-align: right;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    .leftContainer {
+      margin-bottom: 0.75rem;
+    }
+
+    .centerContainer {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .rightContainer {
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+
+      .registerButton {
+        margin-left: 2rem;
+      }
+
+      .shoppingCartContainer {
+        margin-left: 45%;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.containerProduct {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+
+  .circleProduct {
+    opacity: 0.2;
+    background-color: white;
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    margin: 0 0 0 4rem;
+  }
+
+  .imgElementProduct {
+    border-radius: 5%;
+    display: flex;
+    height: 120%;
+    width: 90%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .infoContainerProduct {
+    display: flex;
+    position: absolute;
+    margin: 4.5rem 0 0 4.5rem;
+
+    .iconReactionProduct {
+      .iconSymbolProduct {
+        display: flex;
+        flex-direction: row;
+        height: 11rem;
+        width: 3rem;
+        align-items: center;
+        padding-left: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .circleProduct {
+      width: 17rem;
+      height: 17rem;
+      border-radius: 50%;
+      margin: 0 0 0 3rem;
+    }
+
+    .imgElementProduct {
+      border-radius: 5%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      height: 17rem;
+      width: 22rem;
+      object-fit: cover;
+      margin: 0.5rem 0 0 0;
+    }
+
+    .infoContainerProduct {
+      .iconReactionProduct {
+        .iconSymbolProduct {
+          cursor: pointer;
+          margin: 0 0 3rem 0.5rem;
+          padding-left: 0.4rem;
+        }
+      }
+    }
+  }
+}

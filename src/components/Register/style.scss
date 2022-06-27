@@ -1,0 +1,58 @@
+.containerRegister {
+  width: 100vw;
+  height: 100vh;
+  background: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapperRegister {
+    padding: 2rem;
+    width: 40%;
+    background-color: white;
+
+    .titleRegister {
+      font-size: 3rem;  
+      font-weight: 400;
+    }
+
+    .formRegister {
+      display: flex;
+      flex-wrap: wrap;
+
+      .inputRegister {
+        flex: 1;
+        min-width: 40%;
+        margin: 2rem 1rem 0rem 0rem;
+        padding: 0.5rem;
+      }
+
+      .agreemenRegister {
+        font-size: 3vh;
+        font-family: "Urbanist";
+        font-weight: 300;
+        margin: 1rem 0rem;
+      }
+
+      .buttonRegister {
+        width: 40%;
+        border: none;
+        padding: 1rem 0.5rem;
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerRegister {
+    height: 60rem;
+
+    .wrapperRegister {
+      width: 15.5rem;
+      height: 54rem;
+    }
+  }
+}

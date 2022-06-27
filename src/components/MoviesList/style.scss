@@ -1,0 +1,30 @@
+.container {
+  height: 3rem;
+
+  .title {
+    font-family: "Urbanist";
+    margin: 1rem;
+  }
+
+  .filterContainer {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Urbanist";
+    margin-left: 2rem;
+
+    .select {
+      padding: 0.3rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+
+    .filterContainer2 {
+      margin-left: 140vh;
+      display: flex;
+      font-family: "Urbanist";
+    }
+  }
+}
+
+
+

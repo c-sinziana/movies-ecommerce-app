@@ -1,0 +1,95 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+
+  .movieContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: rgb(226, 243, 243);
+
+    .leftArrowButton {
+      flex: 1;
+      margin: 12rem 0 0 0;
+      width: 5rem;
+      height: 3rem;
+      position: absolute;
+      cursor: pointer;
+      color: rgb(214, 223, 223);
+    }
+
+    .slideContainer {
+      display: flex;
+      flex-direction: column;
+
+      .imgContainer {
+        .imgElement {
+          width: 45rem;
+          height: 30rem;
+        }
+      }
+    }
+
+    .rightArrowButton {
+      flex: 1;
+      margin: 12rem 0 0 40rem;
+      width: 5rem;
+      height: 3rem;
+      position: absolute;
+      cursor: pointer;
+      color: rgb(214, 223, 223);
+    }
+  }
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    position: absolute;
+    margin: 12rem 0 2rem 50rem;
+    font-family: "Urbanist";
+
+    .titleContainer {
+      text-align: center;
+      font-size: 2.3rem;
+      font-weight: 600;
+      color: black;
+    }
+
+    .descriptionContainer {
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    flex-direction: column;
+
+    .movieContainer {
+      .slideContainer {
+        .imgContainer {
+          margin-right: 1.7rem;
+
+          .imgElement {
+            width: 100%;
+            object-fit: cover;
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      .rightArrowButton {
+        margin-left: 18rem;
+      }
+    }
+
+    .infoContainer {
+      position: relative;
+      margin: 2rem 3vh 0 0;
+      padding-left: 2rem;
+    }
+  }
+}

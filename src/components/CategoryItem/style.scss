@@ -1,0 +1,59 @@
+.containerCategoryItem {
+  display: flex;
+  font-family: "Urbanist";
+  font-weight: bold;
+  position: relative;
+  margin: 2rem 2rem 2rem 0;
+
+  .imgElementCategoryItem {
+    width: 30rem;
+    height: 27rem;
+    object-fit: cover;
+  }
+
+  .infoContainerCategoryItem {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10rem 2rem 2rem 10rem;
+
+    .titleContainerCategoryItem {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    .buttonContainerCategoryItem {
+      border: none;
+      padding: 0.8rem;
+      color: teal;
+      cursor: pointer;
+      font-weight: 600;
+      margin: 0 0 0 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerCategoryItem {
+    position: relative;
+    margin: 0 2rem 0.3rem 0rem;
+
+    .imgElementCategoryItem {
+      width: 110%;
+      height: 90%;
+    }
+
+    .infoContainerCategoryItem {
+      position: absolute;
+      margin: 4rem 0 0 7rem;
+
+      .buttonContainerCategoryItem {
+        color: teal;
+        cursor: pointer;
+      }
+    }
+  }
+}
